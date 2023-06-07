@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Inter:wght@400;500;700&family=Outfit:wght@300;400;500&family=Overpass:ital,wght@0,600;1,300&family=Poppins:wght@300;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.top{
+    background: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top img{
+    width: 100px;
+    height: 100px;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+.history{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.text{
+    width: 45%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.text h1{
+    font-size: 55px;
+}
+.text p{
+    font-size: 24px;
+}
+.btn{
+    display: flex;
+    gap: 40px;
+}
+.btn .btn1{
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-size: larger;
+    font-weight: 600;
+    border: none;
+    background-color:hsl(171, 66%, 44%);
+    box-shadow: 0 4px 4px 1px rgb(0, 0, 0, 0.2);
+}
+.btn .btn1:hover{
+    background-color: hsl(233, 100%, 69%);
+    color: white;
+}
+.btn .btn2{
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-size: larger;
+    border: none;
+    font-weight: 600;
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 0 4px 4px 1px rgb(0, 0, 0, 0.2);
+}
+.btn .btn2:hover{
+    background-color: hsl(171, 66%, 44%);;
+    color: white;
+}
+.track-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.track-content p{
+    width: 50%;
+    font-size: 27px;
+    text-align: center;
+}
+.device img{
+    transform: translateX(-40px);
+}
+.device-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.device{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 13rem;
+}
+.dcont p{
+    width: 60%;
+    font-size: 26px;
+    line-height: 45px;
+}
+.clip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.clipboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 5rem;
+}
+.clipboard p{
+    width: 40%;
+    font-size: 25px;
+    text-align: center;
+}
+.clip img{
+    animation-name: anim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim {
+    0%{
+        transform: translateY(0%)
+    }
+    50%{
+        transform: translateY(15%)
+    }
+    100%{
+        transform: translateY(0%)
+    }
+}
+.supercharge{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.workflow{
+    display: flex;
+    gap: 25px;
+    margin-top: 1rem;
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.s-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.s-text p{
+    font-size: 23px;
+}
+.work p{
+    width: 90%;
+    margin-top: 10px;
+    font-size: 23px;
+    text-align: center;
+}
+.images{
+    margin-top: 6rem;
+    display: flex;
+    gap: 12rem;
+    margin-bottom: 8rem;
+}
+.landing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.landing p{
+    width: 60%;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+footer{
+    padding: 30px 0;
+    align-items: center;
+    background-color:hsl(201, 11%, 66%);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.options{
+    display: flex;
+    gap: 5rem;
+}
+.social{
+    display: flex;
+    gap: 30px;
+}
+
+@media screen and (max-width:950px) {
+    main{
+        flex-direction: column;
+        width: 100%;
+        /* padding: ; */
+    }
+    .first{
+        display: flex;
+        flex-direction: column;
+    }
+    .history, .track,.clip, .supercharge{
+        flex-direction: column;
+        padding: 0 15px;
+
+    }
+    .text{
+        width: 100%;
+    }
+    .text h1{
+        font-size: 35px;
+        width: 100%;
+    }
+    .text p{
+        font-size: 17px;
+    }
+    .btn{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .track-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .track-content h1{
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .track-content p{
+        width: 100%;
+        font-size: 17px;
+    }
+    .device{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .device img{
+        width: 90%;
+        transform: none;
+    }
+    .device-cont{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .device-cont p{
+        width: 100%;
+        font-size: larger;
+        line-height: normal;
+    }
+    .clipboard h1{
+        font-size: 33px;
+        text-align: center;
+    }
+    .clipboard p{
+        width: 100%;
+        font-size: 20px;
+    }
+    .clip img{
+        width: 100%;
+    }
+    .clip{
+        margin-bottom: 10px;
+    }
+    .s-text h1, .s-text p{
+        text-align: center;
+    }
+    .workflow{
+        flex-direction: column;
+    }
+    .images{
+        flex-direction: column;
+        margin-top: 2rem;
+        gap: 5rem;
+    }
+    .landing h1{
+        text-align: center;
+    }
+    .landing p{
+        font-size: 20px;
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer img{
+        width: 20%;
+        margin-bottom: 2rem;
+    }
+    .options{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+
+}
